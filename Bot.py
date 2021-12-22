@@ -15,7 +15,6 @@ def main(client, message):
 @bot.on_message(filters.command('post'))
 async def post(_, message):
     while True:
-        x
         x = req.get(API)
         if x.status_code != 200:
             return
