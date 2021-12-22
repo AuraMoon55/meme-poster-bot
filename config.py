@@ -1,9 +1,9 @@
 import os
 import random
 
-TOKEN = os.environ.get('TOKEN')
-API_ID = os.environ.get('API_ID')
-API_HASH = os.environ.get('API_HASH')
+TOKEN = "5015207309:AAE1Hf1L1zpJ-YNxNcbP0AooJwu29DT-0So"
+API_ID = 2919867
+API_HASH = "90dd95178a8d13a69bfdbc7da68d23a4"
 CHANNEL = -1001523814336
 
 SUBREDS = [
