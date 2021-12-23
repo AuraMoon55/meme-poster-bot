@@ -11,7 +11,7 @@ bot = Client('bot',api_id=API_ID,api_hash=API_HASH,bot_token=TOKEN)
 
 @bot.on_message(filters.command('start'))
 def main(client, message):
-    text = f"Hey there {message.from_user.id}, I am meme poster bot which uploads memes from reddit.\nI work for @Anime_Meme_Kingdom Only"
+    text = f"Hey there {message.from_user.first_name}, I am meme poster bot which uploads memes from reddit.\nI work for @Anime_Meme_Kingdom Only"
     buttons = InlineKeyboardMarkup(
     [
         [
