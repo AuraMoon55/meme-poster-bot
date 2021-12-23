@@ -29,7 +29,7 @@ async def post(_, message):
         
 bot.run()
 
-if SUDO_USERS not None :
+if SUDO_USERS is not None:
 def moan()
     bot.send_message("@Villainevil_support", "Im alive to post memes")
 
