@@ -43,7 +43,7 @@ async def post(_, message):
         title=x.get(str("title"))
         meme=x.get(str("url"))
         await bot.send_photo(chat_id=CHANNEL, photo=meme, caption=f"#offtopic #meme {title} \n \n @Anime_meme_kingdom")
-        time.sleep(360)
+        time.sleep(10800)
 
 @bot.on_message(filters.command('post_here'))
 @sudo_users_only
