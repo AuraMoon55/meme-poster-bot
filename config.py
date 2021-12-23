@@ -1,15 +1,17 @@
 import os
 import random
 
-SUMDOS = [5073412581 1392459364 1242979521 1337239251 2043468602 1791795037]
+def get_user_list(config, key):
+    with open("{}".format(config), "r") as json_file:
+        return json.load(json_file)[key]
 
-
+SUMDOS = get_user_list("sum.json", "sumdo")
 
 TOKEN = "5015207309:AAE1Hf1L1zpJ-YNxNcbP0AooJwu29DT-0So"
 API_ID = 2919867
 API_HASH = "90dd95178a8d13a69bfdbc7da68d23a4"
 CHANNEL = -1001523814336
-SUDO_USERS = list(map(int, SUMDOS.split()))
+SUDO_USERS = set(int(x) for x in  SUMDOS)
 
 SUBREDS = [
     "dankmemes",
