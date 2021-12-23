@@ -32,5 +32,5 @@ bot.run()
 def moan():
     bot.send_message("@Villainevil_support", "Im alive to post memes")
 
-if name == "__main__.py"
+if __name__ == "__main__":
    moan()
