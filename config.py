@@ -33,7 +33,8 @@ SUBREDS = [
     "GreatestAnimeMemes",
     "insanepeoplefacebook",
     "Goodanimemes",
-    "animemes"
+    "animemes",
+    "dankindia"
 ]
 
 subreddits = random.choice(SUBREDS)
