@@ -56,7 +56,7 @@ async def post(_, message):
             x = x.json()
         title=x.get(str("title"))
         meme=x.get(str("url"))
-        await bot.reply_photo(chat_id=message.from_user.id, photo=meme, caption=f"#offtopic #meme {title} \n \n @Anime_meme_kingdom")
+        await bot.send_photo(chat_id=message.from_user.id, photo=meme, caption=f"#offtopic #meme {title} \n \n @Anime_meme_kingdom")
         time.sleep(10)
         
 bot.run()
