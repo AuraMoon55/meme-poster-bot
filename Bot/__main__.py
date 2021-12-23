@@ -29,8 +29,8 @@ async def post(_, message):
         
 bot.run()
 
-def main()
+def moan()
     bot.send_message("@Villainevil_support", "Im alive to post memes")
 
 if name == "__main__.py"
-   main()
+   moan()
