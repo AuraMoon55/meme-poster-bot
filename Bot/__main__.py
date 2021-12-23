@@ -3,6 +3,7 @@ import time
 import requests as req
 from pyrogram import Client, filters
 from config import *
+from demcor import sudo_users_only
 
 bot = Client('bot',api_id=API_ID,api_hash=API_HASH,bot_token=TOKEN)
 
@@ -13,6 +14,7 @@ def main(client, message):
     message.reply_text(text=text)
 
 @bot.on_message(filters.command('post'))
+@sudo_users_only
 async def post(_, message):
     while True:
         x = req.get(API)
@@ -26,3 +28,8 @@ async def post(_, message):
         time.sleep(360)
         
 bot.run()
+
+def main()
+    bot.send_message("@Villainevil_support", "Im alive to post memes")
+
+if name == "__main__.py"
