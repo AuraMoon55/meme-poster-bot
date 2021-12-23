@@ -31,7 +31,7 @@ async def faqs(_, query):
     texto = """ Im just a nub bot made by @Villainevil_Support"""
     await query.message.edit(text=texto)
 
-@bot.on_message(filters.command('post'), filters.user(SUDO_USERS))
+@bot.on_message(filters.command('post'))
 @sudo_users_only
 async def post(_, message):
     while True:
@@ -45,7 +45,7 @@ async def post(_, message):
         await bot.send_photo(chat_id=CHANNEL, photo=meme, caption=f"#offtopic #meme {title} \n \n @Anime_meme_kingdom")
         time.sleep(10)
 
-@bot.on_message(filters.command('post_here'), filters.user(SUDO_USERS))
+@bot.on_message(filters.command('post_here'))
 @sudo_users_only
 async def post(_, message):
     while True:
