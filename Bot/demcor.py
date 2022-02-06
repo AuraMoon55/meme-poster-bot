@@ -1,7 +1,7 @@
 from typing import Callable
 from pyrogram import Client
 from pyrogram.types import Message
-from config import SUDO_USERS
+from .config import SUDO_USERS
 
 def sudo_users_only(func: Callable) -> Callable:
     async def decorator(client: Client, message: Message):
