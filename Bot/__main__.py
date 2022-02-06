@@ -3,8 +3,8 @@ import time
 import requests as req
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
-from config import *
-from demcor import sudo_users_only
+from .config import *
+from .demcor import sudo_users_only
 
 bot = Client('bot',api_id=API_ID,api_hash=API_HASH,bot_token=TOKEN)
 
